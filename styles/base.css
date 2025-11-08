@@ -67,7 +67,7 @@ nav a:hover,
     text-decoration: underline;
 }
 
-.card {
+.card .card-resources {
     grid-column: 1/2;
     display: grid;
     grid-template-columns: 1fr 1fr;
