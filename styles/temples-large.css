@@ -32,8 +32,12 @@
     }
 
     .photo-album {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        margin: 0px auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+        place-items: center;
+    }
+
+    .photo-album img {
+        max-width: 250px;
     }
 }
