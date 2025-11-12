@@ -25,6 +25,7 @@ header {
     justify-self: center;
     justify-items: center;
     width: 100%;
+    color: var(--heading-color-2);
 }
 
 header span {
