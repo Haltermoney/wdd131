@@ -7,19 +7,24 @@
 }
 
 * {
-    margin: 0px;
+    margin: 0px auto;
     padding: .25em 0px .25em 0px;
+    margin: 5px;
 }
 
 body {
     font-family: 'Quicksand', Arial, sans-serif;
     max-width: 1200px;
-    display: block;
     margin: auto;
+    background-color: var(--background-color-1);
 }
 
 header {
     background-color: var(--background-color-2);
+    max-width: 1200px;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
 }
 
 header span {
@@ -28,21 +33,30 @@ header span {
     color: var(--heading-color-2);
 }
 
+#temple {
+    font-size: 3em;
+}
+
 #menu {
     list-style: none;
     display: flex;
     flex-direction: column;
-    border: none;
+    border: 0px;
+    padding: 0px;
     position: absolute;
-    top: 1rem;
+    top: 3rem;
     right: 2rem;
-    font-size: 2.7rem;
-
+    font-size: 2.5rem;
+    background-color: var(--background-color-2);
+    color: var(--heading-color-2);
 }
 
-#menu::before {
-    content: "≡";
-    background-color: var(--background-color-2);
+nav,
+ul,
+li,
+a {
+    margin: 2px;
+    padding: 1px;
 }
 
 nav ul {
@@ -57,18 +71,21 @@ nav ul li {
 }
 
 nav a {
-    display: block;
+    display: none;
     text-align: center;
-    padding: 1rem;
     text-decoration: none;
     color: var(--heading-color-2)
 }
 
-.open li {
+.open a {
     display: block;
 }
 
-#menu .open::before {
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
     content: "⨉";
 }
 
@@ -76,8 +93,44 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
+.photo-album {
     max-width: 800px;
-    margin: 0 auto;
-    grid-template-columns: 1fr;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    color: var(--heading-color-1);
+}
+
+main h1 {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.photo-album img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+figcaption {
+    text-align: center;
+    font-size: large;
+}
+
+footer {
+    max-width: 1200px;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+    background-color: var(--footer-color);
+    color: var(--heading-color-2);
 }

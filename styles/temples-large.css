@@ -1,4 +1,4 @@
-@media (min-width: 600px) {
+@media (min-width: 850px) {
     header {
         display: flex;
         align-items: center;
@@ -9,7 +9,7 @@
         display: none;
     }
 
-    nav ul {
+    nav nav ul {
         justify-content: flex-end;
         flex-direction: row;
     }
@@ -19,17 +19,27 @@
     }
 
     nav a {
+        display: block;
         flex: 1 1 100%;
     }
 
-    main {
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: .5em;
+    nav,
+    ul,
+    li,
+    a {
+        margin: 5px;
+        padding: 5px;
     }
 
-    main h1 {
-        grid-column: 1/4;
-        justify-self: center;
+    .photo-album {
+        max-width: 1200;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 0px auto;
+    }
+
+    figure {
+        min-width: 300px;
+        max-width: 400px;
     }
 }
