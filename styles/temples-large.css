@@ -32,14 +32,8 @@
     }
 
     .photo-album {
-        max-width: 1200px;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
         margin: 0px auto;
-    }
-
-    figure {
-        min-width: 300px;
-        max-width: 400px;
     }
 }
