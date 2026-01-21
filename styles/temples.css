@@ -16,6 +16,7 @@ body {
     max-width: 1200px;
     margin: auto;
     background-color: var(--background-color-1);
+    color: var(--header-color-2);
 }
 
 header {
@@ -29,6 +30,7 @@ header {
 header span {
     display: block;
     text-align: center;
+    color: black;
 }
 
 #temple {
@@ -99,7 +101,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: auto;
     gap: 5px;
-    color: var(--header-color-1);
+    color: var(--header-color-2);
 }
 
 
