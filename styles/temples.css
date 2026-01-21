@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: #00deff;
+    background-color: #0077ffbd;
     max-width: 1200px;
     justify-self: center;
     justify-items: center;
@@ -30,7 +30,7 @@ header {
 header span {
     display: block;
     text-align: center;
-    color: black;
+    color: var(--header-color-2);
 }
 
 #temple {
@@ -73,7 +73,7 @@ nav a {
     display: none;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--header-color-1);
 }
 
 .open a {
