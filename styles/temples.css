@@ -1,9 +1,9 @@
 :root {
-    --background-color-1: #F5F7D4;
-    --background-color-2: #9A0794;
-    --heading-color-1: #B814B2;
-    --heading-color-2: #E4F132;
-    --footer-color: #340933;
+    --background-color-1: #1c6e8c;
+    --background-color-2: #7fdeff;
+    --header-color-1: #d0ccd0;
+    --header-color-2: #fbfcff;
+    --footer-color: #605856;
 }
 
 * {
@@ -24,13 +24,11 @@ header {
     justify-self: center;
     justify-items: center;
     width: 100%;
-    color: var(--heading-color-2);
 }
 
 header span {
     display: block;
     text-align: center;
-    color: var(--heading-color-2);
 }
 
 #temple {
@@ -48,7 +46,6 @@ header span {
     right: 2rem;
     font-size: 2.5rem;
     background-color: var(--background-color-2);
-    color: var(--heading-color-2);
 }
 
 nav,
@@ -74,7 +71,7 @@ nav a {
     display: none;
     text-align: center;
     text-decoration: none;
-    color: var(--heading-color-2)
+    color: black;
 }
 
 .open a {
@@ -102,7 +99,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: auto;
     gap: 5px;
-    color: var(--heading-color-1);
+    color: var(--header-color-1);
 }
 
 
@@ -131,5 +128,5 @@ footer {
     justify-items: center;
     width: 100%;
     background-color: var(--footer-color);
-    color: var(--heading-color-2);
+    color: var(--header-color-2);
 }
