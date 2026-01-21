@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: var(--background-color-2);
+    background-color: #00deff;
     max-width: 1200px;
     justify-self: center;
     justify-items: center;
