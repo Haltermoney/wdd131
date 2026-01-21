@@ -1,0 +1,43 @@
+@media (min-width: 850px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav,
+    ul,
+    li,
+    a {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .photo-album {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+        place-items: center;
+    }
+
+    .photo-album img {
+        max-width: 250px;
+    }
+}
