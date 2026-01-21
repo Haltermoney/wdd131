@@ -16,6 +16,7 @@ body {
     max-width: 1200px;
     margin: auto;
     background-color: var(--background-color-1);
+    color: var(--header-color-2);
 }
 
 header {
@@ -27,12 +28,9 @@ header {
     color: var(--background-color-1)
 }
 
-header span {
+header h1 {
     display: block;
     text-align: center;
-}
-
-#temple {
     font-size: 3em;
 }
 
