@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Quicksand:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
 </head>
 
@@ -22,17 +23,19 @@
     </header>
 
     <main>
-        <div class="hero">
+        <div class="hero-container">
             <picture>
                 <source srcset="images/chuuk-large.webp" media="(min-width: 850px)">
-                <img src="images/chuuk-small.webp" alt="Chuuk, Micronesia" width="500" height="250">
+                <img src="images/chuuk-small.webp" class="hero" alt="Chuuk, Micronesia" width="500" height="250">
             </picture>
         </div>
 
         <div class="data">
             <table class="data-table">
                 <thead>
-                    <h2>Data</h2>
+                    <tr>
+                        <th>Data</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -73,9 +76,12 @@
         </div>
 
         <div class="weather">
-            <table>
+            <table class="weather-table">
                 <thead>
-                    <h2>Weather</h2>
+                    <tr>
+                        <th>Weather</th>
+                        <th>☀️</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>

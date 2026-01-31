@@ -1,0 +1,39 @@
+@media (min-width: 850px) {
+
+    header {}
+
+    main {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .weather,
+    .data {
+        position: absolute;
+        opacity: 0.85;
+        padding: 5px;
+
+    }
+
+    .data {
+        top: 5%;
+        left: 2rem;
+    }
+
+    .weather {
+        bottom: 10%;
+        right: 2rem;
+    }
+}
