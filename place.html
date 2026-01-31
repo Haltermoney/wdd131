@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Cody Halterman | Place">
+    <meta name="author" content="Cody Halterman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Chuuk</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/chuuk-large.webp" media="(min-width: 850px)">
+                <img src="images/chuuk-small.webp" alt="Chuuk, Micronesia" width="500" height="250">
+            </picture>
+        </div>
+
+        <div class="data">
+            <table class="data-table">
+                <thead>
+                    <h2>Data</h2>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Area:</td>
+                        <td>93.07 sq km</td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>36,158</td>
+                    </tr>
+                    <tr>
+                        <td>Capital:</td>
+                        <td>Weno</td>
+                    </tr>
+                    <tr>
+                        <td>Languages:</td>
+                        <td>Chuukese</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>United States Dollar</td>
+                    </tr>
+                    <tr>
+                        <td>Time Zone:</td>
+                        <td>UTC +10</td>
+                    </tr>
+                    <tr>
+                        <td>Calling Code:</td>
+                        <td>+691</td>
+                    </tr>
+                    <tr>
+                        <td>Internet TLD:</td>
+                        <td>.fm</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="weather">
+            <table>
+                <thead>
+                    <h2>Weather</h2>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td><span id="temp"></span> ℃</td>
+                    </tr>
+                    <tr>
+                        <td>Conditions:</td>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td>Wind:</td>
+                        <td><span id="speed"></span> km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td>
+                            <span id="windChillDisplay"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Cody Halterman | Tooele, Utah </p>
+        <p>Chuuk</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
