@@ -46,4 +46,10 @@
     .weather-row {
         display: none;
     }
+
+    .weather-table th::after {
+        content: "☀️";
+        font-size: 30px;
+        display: block
+    }
 }
