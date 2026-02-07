@@ -116,7 +116,9 @@ nav a:hover {
     color: var(--header-color-2);
 }
 
-
+.temple-card {
+    background-color: #114c618a;
+}
 
 main h2 {
     grid-column: 1/-1;

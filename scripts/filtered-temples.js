@@ -11,6 +11,8 @@ const today = new Date();
 document.getElementById("lastModified").innerHTML = document.lastModified;
 year.innerHTML = today.getFullYear();
 
+const filterTitle = document.querySelector("#filter-title");
+
 const temple = [
     {
         templeName: "Aba Nigeria",
@@ -132,24 +134,29 @@ displayTemples(temple);
 
 document.querySelector("#old").addEventListener("click", () => {
     const oldTemples = temple.filter(t => parseInt(t.dedicated.split(",")[0]) < 1900);
+    filterTitle.textContent = "Old";
     displayTemples(oldTemples);
 });
 
 document.querySelector("#new").addEventListener("click", () => {
     const newTemples = temple.filter(t => parseInt(t.dedicated.split(",")[0]) > 2000);
+    filterTitle.textContent = "New";
     displayTemples(newTemples);
 });
 
 document.querySelector("#large").addEventListener("click", () => {
     const largeTemples = temple.filter(t => t.area > 90000);
+    filterTitle.textContent = "Large";
     displayTemples(largeTemples);
 });
 
 document.querySelector("#small").addEventListener("click", () => {
     const smallTemples = temple.filter(t => t.area < 10000);
+    filterTitle.textContent = "Small";
     displayTemples(smallTemples);
 });
 
 document.querySelector("#all").addEventListener("click", () => {
+    filterTitle.textContent = "Home";
     displayTemples(temple);
 });
