@@ -1,0 +1,139 @@
+:root {
+    --background-color-1: #1c6e8c;
+    --background-color-2: #7fdeff;
+    --header-color-1: #d0ccd0;
+    --header-color-2: #fbfcff;
+    --footer-color: #605856;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+header,
+footer,
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    /* display: grid; */
+    width: 100%;
+    background-color: var(--background-color-1);
+    color: var(--header-color-2);
+}
+
+header {
+    background-color: var(--header-color-2);
+    max-width: 1200px;
+    justify-self: center;
+    justify-items: center;
+    width: 75%;
+    color: var(--background-color-1)
+}
+
+header h1 {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+    top: .5%;
+    right: 17%;
+    font-size: 2.5rem;
+    background-color: var(--header-color-2);
+    color: var(--background-color-1);
+}
+
+nav,
+ul,
+li,
+a {
+    margin: 2px;
+    padding: 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    font-size: 2em;
+}
+
+nav a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--background-color-1);
+}
+
+.open a {
+    display: block;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "⨉";
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#photo-album {
+    max-width: 1200px;
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    color: var(--header-color-2);
+}
+
+
+
+main h2 {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#photo-album img {
+    max-width: 400px;
+    padding: 5px;
+}
+
+footer {
+    max-width: 1200px;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+    background-color: var(--footer-color);
+    color: var(--header-color-2);
+}

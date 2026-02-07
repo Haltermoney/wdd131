@@ -1,0 +1,50 @@
+@media (min-width: 850px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav,
+    ul,
+    li,
+    a {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #photo-album {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+        place-items: center;
+    }
+
+    .photo-album img {
+        max-width: 250px;
+    }
+}
+
+@media (min-width: 1240px) {
+    #photo-album {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
