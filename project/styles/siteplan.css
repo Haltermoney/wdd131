@@ -1,0 +1,64 @@
+:root {
+    /* Deep Blue */
+    --color-primary: #005F73;
+    /* Copper Orange */
+    --color-accent: #CA6702;
+    /* Off-white Sand */
+    --color-background: #F8F4E9;
+    /* Dark Charcoal */
+    --color-text: #212529;
+    /* Almost Black */
+    --color-footer: #0A2129;
+
+    /* Font Families */
+    --font-header: 'Roboto', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+
+    /* Font Weights */
+    --weight-bold: 700;
+    --weight-medium: 500;
+    --weight-regular: 400;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Quicksand', sans-serif;
+    padding: 16px;
+}
+
+h1,
+h2,
+h3,
+.nav-link,
+button {
+    font-family: var(--font-header);
+    font-weight: var(--weight-bold);
+    letter-spacing: -0.02em;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 8px;
+}
+
+p,
+li,
+blockquote {
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+img {
+    width: 50%;
+}
