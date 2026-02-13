@@ -1,0 +1,118 @@
+:root {
+    /* Deep Blue */
+    --color-primary: #005F73;
+    /* Copper Orange */
+    --color-accent: #CA6702;
+    /* Off-white Sand */
+    --color-background: #F8F4E9;
+    /* Dark Charcoal */
+    --color-text: #212529;
+    /* Almost Black */
+    --color-footer: #0A2129;
+
+    /* Font Families */
+    --font-header: 'Roboto', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+
+    /* Font Weights */
+    --weight-bold: 700;
+    --weight-medium: 500;
+    --weight-regular: 400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+footer,
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    padding: 16px;
+    margin: 0;
+}
+
+header {
+    background-color: var(--header-color-2);
+    max-width: 1200px;
+    justify-self: center;
+    justify-items: center;
+    width: 75%;
+    color: var(--background-color-1)
+}
+
+header h1 {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+}
+
+footer {
+    max-width: 600px;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+    background-color: var(--color-footer);
+    color: var(--color-accent);
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}

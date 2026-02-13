@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Cody Halterman | Product Review">
+    <meta name="author" content="Cody Halterman">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/product-review.css">
+    <script src="scripts/product-review.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="GET">
+            <label for="product-select">Choose a product:</label>
+            <select id="product-select" name="product_id" required>
+                <option value="" disabled selected>Select a product...</option>
+            </select>
+
+            <label for="rating">Overall Rating</label>
+            <div class="radio-group">
+                <label for="1"><input type="radio" id="1-star" name="rating" value="1" required>
+                    &star;</label>
+                <label for="2"><input type="radio" id="2-star" name="rating" value="2" required>
+                    &star;&star;</label>
+                <label for="3"><input type="radio" id="3-star" name="rating" value="3" required>
+                    &star;&star;&star;</label>
+                <label for="4"><input type="radio" id="4-star" name="rating" value="4" required>
+                    &star;&star;&star;&star;</label>
+                <label for="4"><input type="radio" id="5-star" name="rating" value="5" required>
+                    &star;&star;&star;&star;&star;</label>
+            </div>
+
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <label for="feature">Which features did you find useful in the product?<br>(Check all that apply)</label>
+            <div class="checkbox-group">
+                <label for="feature1"><input type="checkbox" id="feature1" name="feature1" value="durability">
+                    Durability</label>
+                <label for="feature2"><input type="checkbox" id="feature2" name="feature2" value="ease of use">
+                    Ease of Use</label>
+                <label for="feature3"><input type="checkbox" id="feature3" name="feature3" value="performance">
+                    Performance</label>
+                <label for="feature4"><input type="checkbox" id="feature4" name="feature4" value="Design">
+                    Design</label>
+            </div>
+
+            <label for="written-review">Written Review</label>
+            <textarea id="written-review" name="written-review" rows="4" cols="40"></textarea>
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+
+            <input type="submit" value="Post Review">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Cody Halterman | Tooele, Utah </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

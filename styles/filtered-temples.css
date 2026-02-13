@@ -26,7 +26,6 @@ main {
 }
 
 body {
-    /* display: grid; */
     width: 100%;
     background-color: var(--background-color-1);
     color: var(--header-color-2);
