@@ -154,59 +154,22 @@ footer {
     color: var(--color-accent);
 }
 
-form {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: left;
-    grid-column: 1/3;
+h2 {
+    padding: 10px;
 }
 
-label {
-    display: block;
-    margin-top: 1.5rem;
-    margin-bottom: .5rem;
-    font-weight: bold;
+.hotel-card,
+.restaurant-card {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-input[type="text"],
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid var(--color-primary);
-    border-radius: 4px;
-    font-size: 1rem;
-    display: block;
+.hotel-card p,
+.restaurant-card p {
+    padding: 5px;
 }
 
-input[type="submit"] {
-    width: 100%;
-    background-color: var(--color-primary);
-    color: white;
-    padding: 14px 20px;
-    margin-top: 2rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-
-.london-bridge,
-.weather,
-.havasu-facts,
-.havasu-map {
-    width: 90%;
-    margin-bottom: 2rem;
-    display: block;
-}
-
-.london-bridge img,
-.havasu-map iframe {
-    width: 100%;
-    height: auto;
-}
 
 @media (min-width: 850px) {
     header {
@@ -234,39 +197,5 @@ input[type="submit"] {
 
     .navigation li {
         margin: 0 0 0 20px;
-    }
-
-    main {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr;
-        padding: 10px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    main h1 {
-        grid-column: 1/3;
-    }
-
-    .london-bridge {
-        grid-column: 1/3;
-    }
-
-    .weather {
-        grid-column: 1/2;
-    }
-
-    .havasu-facts {
-        grid-column: 2/3;
-        width: 80%;
-    }
-
-    .havasu-map {
-        grid-column: 1/3;
-    }
-
-    form {
-        padding: 3rem;
     }
 }
