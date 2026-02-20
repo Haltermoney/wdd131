@@ -37,8 +37,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0.5rem;
     position: relative;
+    min-height: 80px;
 }
 
 #logo {
@@ -53,6 +54,11 @@ header {
     font-size: 2.5rem;
     cursor: pointer;
     z-index: 100;
+    margin-right: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #menu::before {
@@ -65,7 +71,6 @@ header {
 
 .navigation {
     display: none;
-    /* Hidden by default on mobile */
     list-style: none;
     position: absolute;
     top: 100%;
@@ -80,7 +85,6 @@ header {
 
 .navigation.open {
     display: flex;
-    /* Shown when JS toggles .open */
 }
 
 .navigation li {
@@ -137,14 +141,6 @@ main {
     text-align: center;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
-
-
 .open a {
     display: block;
 }
@@ -197,6 +193,21 @@ input[type="submit"] {
     font-size: 1.1rem;
 }
 
+.london-bridge,
+.weather,
+.havasu-facts,
+.havasu-map {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.london-bridge img,
+.havasu-map iframe {
+    width: 100%;
+    height: auto;
+}
+
 @media (min-width: 850px) {
     header {
         display: flex;
@@ -205,6 +216,7 @@ input[type="submit"] {
         max-width: 1200px;
         margin: 0 auto;
         width: 100%;
+        padding: 1rem 2rem;
     }
 
     #menu {
